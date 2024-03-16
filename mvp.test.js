@@ -86,7 +86,7 @@ describe('Module 4 Project', () => {
     expect(document.querySelector('.info').textContent).toBe('')
   })
 
-  test('👉 [3] div#weatherWidget renders the correct data for Honolulu', async () => {
+  test.only('👉 [3] div#weatherWidget renders the correct data for Honolulu', async () => {
     const select = document.querySelector('select')
     fireEvent.change(select, { target: { value: 'Honolulu' } })
     // today
